@@ -1,0 +1,16 @@
+img{
+	
+
+}
+
+.vertical-divider{
+    border-right:1px solid #fec222;
+
+}
+
+.vertical-divider img{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding: 30px;
+}

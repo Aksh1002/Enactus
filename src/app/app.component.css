@@ -1,0 +1,11 @@
+.vertical-divider{
+    border-right:1px solid #ddd;
+}
+
+.ftr{
+	background-color: #2e7cf6;
+	background-image: url('/assets/top-pattern-150.png');
+	/*background-repeat: no-repeat;*/
+	background-size: contain;
+	background-position: left top;
+}

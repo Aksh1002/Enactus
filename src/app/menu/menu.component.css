@@ -1,0 +1,17 @@
+
+.navbar-nav .nav-link {
+    color: rgb(0,0,0,1);
+    
+    
+}
+nav img{
+	position: relative;
+	height: 50px
+}
+
+nav{
+	border:1px;
+	border-bottom: 10px;
+	border-color: #fec222;
+	border-style: solid;
+}

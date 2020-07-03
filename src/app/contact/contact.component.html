@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="card text-blank border-0 offset-sm-3 col-sm-6 ">
+        <div class="card-body">
+            <div class="card-title text-center ">
+                <h5>Contact US</h5>
+                <br>
+                <h3>
+                    Give us your Detail our team will contact you shortly
+                </h3>
+            </div>
+
+            <div class="card-text">
+                <form [formGroup]="myform" (ngSubmit)="onsubmit(myform)">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                            <input type="text" class="form-control" placeholder="First Name"
+                                            [formControl]="myform.controls['first_name'] ">
+                                        </div>
+
+                                        <div class="form-group pl-1 col-sm-6">
+                                            <input type="text" class="form-control" placeholder="Last Name"
+                                            [formControl]="myform.controls['last_name']" >
+                                        </div>
+
+                                        <div class="alert alert-danger"
+                                    *ngIf="(myform.controls['first_name'].invalid || myform.controls['last_name'].invalid)&&(myform.controls['first_name'].touched || myform.controls['last_name'].touched)">
+                                        First and Last Name are required
+                                    </div>
+
+                                    <div class="form-group col-sm-12">
+
+                                        <input type="email" class="form-control" placeholder="Enter Your Email"
+                                        [formControl]="myform.controls['email']">
+                                    </div>
+                                    <div class="alert alert-danger"
+                                    *ngIf="(myform.controls['email'].invalid)&&(myform.controls['email'].touched)">
+                                        Enter Valid Email
+                                    </div>
+                                     <div class="form-group col-sm-12">
+
+                                        <input type="text" class="form-control" placeholder="Enter Your Phone"
+                                        [formControl]="myform.controls['phone']">
+                                    </div>
+                                     <div class="form-group col-sm-12">
+
+                                        <input type="text" class="form-control" placeholder="Enter Your address"
+                                        [formControl]="myform.controls['address']">
+                                    </div>
+                                    <textarea name="message" id="" cols="80" rows="3"
+                                    class="form-control " placeholder="Any Message.."
+                                        [formControl]="myform.controls['message']"></textarea>
+
+                                        <div class="text-center offset-sm-4 col-sm-4 offset-sm-4 pt-2">
+                                        <button type="submit" class="btn btn-block btn-warning  "
+                                        [disabled]="(myform.invalid)&&(myform.touched)">
+                                            Submit
+                                        </button>
+                                    </div>
+
+
+                        </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

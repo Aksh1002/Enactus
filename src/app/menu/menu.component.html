@@ -1,0 +1,67 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+  <a class="navbar-brand logo" href="#">
+    <img class="align-middle "
+		 src="assets/home-logo.png" >
+    
+  </a>
+
+  <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    </span>
+
+  </button>
+
+
+
+  <div class="collapse navbar-collapse   " id="navbarSupportedContent">
+
+    <!-- <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse" *ngIf="!loggedIn">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse" >
+        <a class="nav-link" routerLink="/myblogs">Home</a>
+      </li>
+
+
+
+    </ul> -->
+
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item right p-2 pr-5" >
+        <a class="nav-link" routerLink="home"
+        routerLinkActive="active" >Home</a>
+      </li>
+    
+		 <li class="nav-item right p-2 pr-5">
+        <div class="dropdown">
+          <button routerLinkActive="active"class="btn  bg-transparent dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Project
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- <a class="dropdown-item" routerLink="aakar">Aakar</a> -->
+            <a class="dropdown-item" routerLink="ankuran">Ankuran</a>
+            
+          </div>
+        </div>
+      </li>
+
+      
+
+      
+		 <li class="nav-item right p-2 pr-5" routerLinkActive="active">
+        <a class="nav-link" routerLink="contact">Contact Us</a>
+      </li>
+      
+		 <li class="nav-item right p-2 pr-5" routerLinkActive="active">
+        <a class="nav-link" routerLink="team">Our Team</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
